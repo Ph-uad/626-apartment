@@ -1,0 +1,84 @@
+.apartment {
+
+  &-container {
+    grid-template-columns: repeat(3, 27.3%);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    @media (max-width: 56.25em) {
+      &{
+        grid-template-columns: repeat(2, 47.3%);
+      }
+    }
+  }
+
+  &-flex {
+    align-items: flex-end;
+
+    &:not(:last-of-type) {
+      border-bottom: thin solid var(--color-black);
+    }
+  }
+
+  &-location {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: var(--color-black);
+    margin: 0;
+  }
+
+  &-state,
+  &-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.card {
+  background-color: var(--color-contrast);
+  font-size: 1.6rem;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 50.9vh;
+
+  &-gallery {
+    height: 50%;
+    @media (max-width: 56.25em) {
+      &{
+        height: 45%;
+      }
+    }
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-details {
+    padding: 2.5rem 0;
+  }
+}
+
+.button, .preview-button{
+  display: block;
+  margin:  5rem auto;
+  border-radius: 60px;
+  width: 20%;
+  background: var(--color-gray);
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.preview-button{
+  font-size: 1rem;
+  padding: 1rem;
+  width: 30%;
+  margin:  2rem auto 0 auto;
+  background: var(--color-white);
+}
+.button:hover, .Abutton:hover{
+  color: var(--color-black);
+}

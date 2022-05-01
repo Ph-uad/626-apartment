@@ -1,0 +1,29 @@
+
+.apartment{
+
+    &-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+          background: var(--color-contrast);
+       opacity: 1;
+    }
+
+    &-box{
+        height: 100%;
+        width: 100%;
+    }
+
+    &-image{
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    &-details{
+        flex: 0 1 50%;
+        padding: 4rem;
+    }
+}

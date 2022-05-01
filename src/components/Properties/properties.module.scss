@@ -1,0 +1,48 @@
+.properties {
+
+    &-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+     
+
+        &__rows {
+            padding: 2rem;
+            height: 22rem;
+            padding-top: 14rem;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                grid-column: span 2;
+            }
+
+    
+            &:nth-child(2) {}
+
+            &:nth-child(3) {}
+
+            &:nth-child(4) {}
+
+            &:nth-child(5) {}
+
+            &:nth-child(6) {}
+
+            &:nth-child(7) {}
+        }
+        & > * {
+            background: url(../../Assets/img/building2.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &__rows{
+            &:nth-child(1) {
+                background: url(../../Assets/img/building2.jpg) center center cover;
+         
+            }
+        }
+    }
+
+
+}

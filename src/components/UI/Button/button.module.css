@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--color-primary__light);
+  border: none;
+  font-size: 17px;
+  padding: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 3px rgb(180, 178, 178);
+  background-color: var(--color-contrast);
+}
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 1px rgb(180, 178, 178);
+}
+.btn:hover span {
+  padding-right: 1.5rem;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}/*# sourceMappingURL=button.module.css.map */

@@ -1,0 +1,60 @@
+@-webkit-keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.heading {
+  background: url(../../Assets/img/header1.jpg) top center/cover no-repeat;
+  font-family: inherit;
+  background-attachment: fixed;
+  height: 90vh;
+  overflow: hidden;
+}
+.heading-text {
+  padding: 7rem;
+  position: relative;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: animate-pop;
+          animation-name: animate-pop;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.heading-text > h3 {
+  margin: 1rem;
+}
+.heading-paragraph {
+  font-size: 1.8rem;
+  width: 30%;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.heading-image1 {
+  width: 70%;
+  filter: opacity(0.8);
+  transform: rotate(180deg);
+  margin-top: -17%;
+}
+
+.image {
+  width: 40px;
+}/*# sourceMappingURL=header.module.css.map */

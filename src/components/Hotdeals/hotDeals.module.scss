@@ -1,0 +1,17 @@
+.hot{
+    gap: 0;
+    align-items: stretch;
+    
+    &-details{
+        flex: 0 1 50%;
+        background-color: var(--color-black);
+        padding: 2rem;
+        color: var(--color-contrast);
+    }
+}
+
+.black{
+    flex: 0 1 50%;
+    aspect-ratio: 1;
+    background: url(../../Assets/img/hotDeals.jpg) top center/cover;
+}

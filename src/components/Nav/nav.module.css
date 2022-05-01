@@ -1,0 +1,27 @@
+.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  padding: 1rem;
+  background-color: var(--color-white);
+}
+
+.logo {
+  justify-self: center;
+  font-size: 4rem;
+}
+
+.list-link {
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: currentColor;
+  transition: all 1s ease-in;
+}
+.list-link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=nav.module.css.map */

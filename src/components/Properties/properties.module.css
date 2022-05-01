@@ -1,0 +1,21 @@
+.properties-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.properties-grid__rows {
+  padding: 2rem;
+  height: 22rem;
+  padding-top: 14rem;
+}
+.properties-grid__rows:nth-child(2), .properties-grid__rows:nth-child(3) {
+  grid-column: span 2;
+}
+.properties-grid > * {
+  background: url(../../Assets/img/building2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.properties-grid__rows:nth-child(1) {
+  background: url(../../Assets/img/building2.jpg) center center cover;
+}/*# sourceMappingURL=properties.module.css.map */
