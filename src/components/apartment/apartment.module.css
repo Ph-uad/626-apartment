@@ -34,12 +34,7 @@
   max-height: 50.9vh;
 }
 .card-gallery {
-  height: 50%;
-}
-@media (max-width: 56.25em) {
-  .card-gallery {
-    height: 45%;
-  }
+   height: 45%;
 }
 .card-image {
   width: 100%;
