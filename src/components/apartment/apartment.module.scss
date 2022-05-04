@@ -44,11 +44,6 @@
 
   &-gallery {
     height: 45%;
-    @media (max-width: 56.25em) {
-      &{
-        height: 45%;
-      }
-    }
   }
 
   &-image {
